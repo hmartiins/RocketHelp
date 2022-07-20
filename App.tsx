@@ -6,7 +6,7 @@ import {
 } from '@expo-google-fonts/roboto';
 
 import { THEME } from './src/styles/theme';
-import { Home } from './src/screens/Home';
+import { Register } from './src/screens/Register';
 import { Loading } from './src/components/Loading';
 
 import { NativeBaseProvider, StatusBar } from 'native-base';
@@ -21,7 +21,7 @@ export default function App() {
         backgroundColor='transparent'
         translucent 
       />
-      { fontsLoaded ? <Home /> : <Loading /> }
+      { fontsLoaded ? <Register /> : <Loading /> }
     </NativeBaseProvider>
   );
 }
